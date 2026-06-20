@@ -1,0 +1,30 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// 1. The Project Model
+model Project {
+  id               Int      @id @default(autoincrement())
+  title            String
+  description      String   
+  longDescription  String   
+  techStack        String[] // PostgreSQL natively supports string arrays!
+  githubUrl        String?  
+  liveUrl          String?  
+  imageUrl         String   
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+// 2. The Message Model (For your contact form)
+model Message {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
