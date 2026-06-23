@@ -7,30 +7,31 @@ export default function Testimony() {
   const testimonials = [
     {
       id: 1,
-      name: "Tagicho Shitaye",
-      role: "Channel and Business Development Manager",
-      company: "IE Network Solutions",
+      name: "Behailu Gezaw",
+      role: "Operations Manager",
+      company: "Little App - Ethiopia",
       quote:
         "Yonatan is an exceptional developer who attacks full-stack engineering problems with a structured mindset. His work on automation engines and modern system architectures is always scalable and exceptionally clean.",
-      image: "/Wushy.png",
+      image: "/Behayilu.png",
     },
-    {
+   
+   {
       id: 2,
+      name: "ESERAEL Mohammed",
+      role: "FOUNDER & MANAGER",
+      company: "EXPRESS PHARMACEUTICAL WHOLESALE",
+      quote:
+        "Yonatan engineered a highly efficient pharmaceutical stock management system for us. His ability to blend fluid user interfaces with secure backend states and precision invoice layouts makes him an asset to any development squad.",
+      image: "/Eserus.jpg",
+    },
+     {
+      id: 3,
       name: "Asimamawu Admasu",
       role: "FULL-STACK DEVELOPER & TEAMMATE",
       company: "ENGINEERING COLLABORATOR",
       quote:
         "Working on complex systems alongside Yonatan was a breeze. He handles architecture layout under pressure, brings creative problem-solving to database tracking, and keeps the code clean.",
       image: "/Asme.jpg",
-    },
-   {
-      id: 3,
-      name: "ESERAEL",
-      role: "FOUNDER & MANAGER",
-      company: "EXPRESS PHARMACEUTICAL WHOLESALE",
-      quote:
-        "Yonatan engineered a highly efficient pharmaceutical stock management system for us. His ability to blend fluid user interfaces with secure backend states and precision invoice layouts makes him an asset to any development squad.",
-      image: "/Eserus.jpg",
     },
   ];
 
