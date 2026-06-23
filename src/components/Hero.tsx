@@ -122,7 +122,7 @@ export default function Hero() {
               Let’s Talk
             </Link>
             <a
-              href="/resume.pdf"
+              href="/MyCV (3).pdf"
               className="rounded-full border border-slate-300 dark:border-slate-700 px-6 py-3 text-sm font-semibold text-slate-700 dark:text-slate-100 transition hover:border-sky-500 dark:hover:border-sky-400 hover:bg-slate-50 dark:hover:bg-slate-900"
             >
               View Resume

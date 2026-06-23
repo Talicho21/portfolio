@@ -26,8 +26,8 @@ export default function Testimony() {
    {
       id: 3,
       name: "ESERAEL",
-      role: "LECTURER IN PHARMACY / FOUNDER",
-      company: "HAWASSA UNIVERSITY & EXPRESS PHARMACEUTICALS",
+      role: "FOUNDER & MANAGER",
+      company: "EXPRESS PHARMACEUTICAL WHOLESALE",
       quote:
         "Yonatan engineered a highly efficient pharmaceutical stock management system for us. His ability to blend fluid user interfaces with secure backend states and precision invoice layouts makes him an asset to any development squad.",
       image: "/Eserus.jpg",
