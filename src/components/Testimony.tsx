@@ -7,6 +7,15 @@ export default function Testimony() {
   const testimonials = [
     {
       id: 1,
+      name: "Bikila Alemu",
+      role: "Internship & Externship Coordinator",
+      company: "AMiT - Arba Minch University",
+      quote:
+        "Yonatan is one of the most dedicated and capable students I have taught at our university. He consistently demonstrates strong problem-solving abilities, a quick grasp of complex concepts, and an outstanding work ethic both inside and outside the classroom.",
+      image: "/bikila.jpg",
+    },
+    {
+      id: 2,
       name: "Behailu Gezaw",
       role: "Operations Manager",
       company: "Little App - Ethiopia",
@@ -14,9 +23,8 @@ export default function Testimony() {
         "Yonatan is an exceptional developer who attacks full-stack engineering problems with a structured mindset. His work on automation engines and modern system architectures is always scalable and exceptionally clean.",
       image: "/Behayilu.png",
     },
-   
    {
-      id: 2,
+      id: 3,
       name: "ESERAEL Mohammed",
       role: "FOUNDER & MANAGER",
       company: "EXPRESS PHARMACEUTICAL WHOLESALE",
@@ -25,7 +33,7 @@ export default function Testimony() {
       image: "/Eserus.jpg",
     },
      {
-      id: 3,
+      id: 4,
       name: "Asimamawu Admasu",
       role: "FULL-STACK DEVELOPER & TEAMMATE",
       company: "ENGINEERING COLLABORATOR",

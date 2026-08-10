@@ -32,6 +32,16 @@ export const projects: ProjectFallback[] = [
   },
   {
     id: 3,
+    title: 'Hawan Drug Store',
+    description: 'A comprehensive inventory, sales, and analytics dashboard designed for pharmaceutical operations.',
+    longDescription: 'Hawan Drug Store is a secure, responsive full-stack platform built to streamline retail pharmacy workflows. It includes features for real-time stock tracking, quick order billing, and business intelligence reporting.',
+    techStack: ['Next.js', 'React', 'Tailwind', 'PostgreSQL', 'Supabase'],
+    githubUrl: 'https://github.com/Talicho21/',
+    liveUrl: 'https://hawan-drug-store.vercel.app/login',
+    imageUrl: '/Hawan.png',
+  },
+  {
+    id: 4,
     title: 'Bishoftu Travel',
     description: 'An interactive, beautiful localized mapping platform exploring cultural tourist nodes.',
     longDescription: 'Enables visitors to easily map regional hotspots, view custom community landmarks, and read dynamic itineraries on fluid interfaces.',
@@ -41,7 +51,7 @@ export const projects: ProjectFallback[] = [
     imageUrl: '/Bishoftu.png',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Tali Shopping',
     description: 'Optimized e-commerce engine with real-time UI synchronization layers.',
     longDescription: 'Constructed with clean client state logic, instant cart validation hooks, and responsive catalogs that seamlessly cross-sync store products.',
