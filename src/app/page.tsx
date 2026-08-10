@@ -6,9 +6,34 @@ import Testimony from "@/components/Testimony";
 import ProjectCard from "@/components/ProjectCard";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer"; // Imported the customized footer
-import { projects } from "@/data/projects";
+import { projects as fallbackProjects, ProjectFallback } from "@/data/projects";
+import { prisma } from "@/lib/db";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  let displayProjects: ProjectFallback[] = fallbackProjects;
+  
+  try {
+    const dbProjects = await prisma.project.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+    
+    if (dbProjects.length > 0) {
+      displayProjects = dbProjects.map(project => ({
+        id: project.id,
+        title: project.title,
+        description: project.description,
+        longDescription: project.longDescription,
+        techStack: project.techStack,
+        githubUrl: project.githubUrl,
+        liveUrl: project.liveUrl,
+        imageUrl: project.imageUrl,
+      }));
+    }
+  } catch (error) {
+    console.warn("Home page falling back to local project data:", error);
+  }
   return (
     /* 
       - bg-slate-50 shifts to bg-[#030712] (your deep dark theme) when .dark is active
@@ -47,7 +72,7 @@ export default function HomePage() {
             Changes layout to a flexible 3-column system on large screens.
           */}
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {projects.map((project, index) => {
+            {displayProjects.map((project, index) => {
               // The first project (index 0) becomes the flagship Bento item
               const isFlagship = index === 0;
               const gridClass = isFlagship 

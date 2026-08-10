@@ -101,6 +101,17 @@ export default function Navbar() {
               {isDarkMode ? "☀️" : "🌙"}
             </span>
           </button>
+
+          {/* Admin Login Icon */}
+          <a
+            href="/admin"
+            aria-label="Admin Dashboard"
+            className="flex h-8 w-8 ml-1 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 transition-all hover:scale-110 active:scale-95 shadow-sm"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </a>
         </nav>
 
         {/* ==================== COMPACT CONTROLS (MOBILE & TABLET) ==================== */}
@@ -111,7 +122,7 @@ export default function Navbar() {
           <button 
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle Theme Mode"
-            className={`flex h-8 w-8 items-center justify-center rounded-full text-sm shadow-sm transition-all ${
+            className={`flex h-8 w-8 items-center justify-center rounded-full text-sm shadow-sm transition-all active:scale-95 ${
               isDarkMode 
                 ? "bg-gradient-to-b from-sky-400 to-blue-600 text-yellow-300" 
                 : "bg-gradient-to-b from-amber-400 to-orange-500 text-white"
@@ -119,6 +130,17 @@ export default function Navbar() {
           >
             <span>{isDarkMode ? "☀️" : "🌙"}</span>
           </button>
+
+          {/* Admin Login Icon */}
+          <a
+            href="/admin"
+            aria-label="Admin Dashboard"
+            className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 transition-all active:scale-95 shadow-sm"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </a>
 
           {/* Mobile Hamburger Trigger */}
           <button
